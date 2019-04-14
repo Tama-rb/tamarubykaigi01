@@ -1,0 +1,30 @@
+$dark-087: rgba(0, 0, 0, 0.87); // 普通のテキスト、タイトル
+$dark-083: rgba(0, 0, 0, 0.65); // サブテキスト
+// todo: 薄いから調整
+$dark-054: rgba(0, 0, 0, 0.54); // サブテキスト
+$dark-026: rgba(0, 0, 0, 0.26); // 使えない、押せない、存在を潜めたいもの
+$dark-012: rgba(0, 0, 0, 0.12); // この世のすべてのborder
+
+$base-font-color:$dark-083;
+
+.display-comming {
+    color: rgb(199, 108, 108);
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 0.8rem;
+    line-height: 1;
+}
+
+.title {
+    color: $base-font-color;
+    font-size: 2.2rem;
+}
+
+.description {
+    color: $base-font-color;
+    font-size: 1.3rem;
+}
+
+.flex-disable>* {
+    align-self: flex-end;
+}
