@@ -5,17 +5,17 @@
 2. `git clone`したディレクトリで`npm install`
 3. ビルド用にcliをインストール`npm install -g @angular/cli`
 
-## ローカル環境で起動
-- `ng serve`
+## ローカルサーバー起動
+`ng serve`
 
-## Prodaction環境更新(Github Pages)
-#### 前提
+## Prodaction環境リリース(Github Pages)
+### 前提
 - masterブランチの`docs`配下をGithub Pagesに適用中
     - https://github.com/Tama-rb/tamarubykaigi2019/settings
 - docs配下が以下のURLに公開される
     - https://tama-rb.github.io/tamarubykaigi2019/
 
-#### 操作
+### 操作
 1. localでbuild
     - `ng build --prod --output-path "docs" --base-href "https://Tama-rb.github.io/tamarubykaigi2019/" --deploy-url "/tamarubykaigi2019/"`
 2. `/docs`配下を全てcommit
