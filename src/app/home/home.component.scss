@@ -32,3 +32,13 @@ $base-font-color:$dark-083;
 .logo {
   width: 184px;
 }
+
+.under-line {
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px rgb(199, 108, 108);
+}
+
+.thumbnail {
+  width: 128px;
+  height: 128px;
+}
