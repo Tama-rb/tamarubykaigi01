@@ -12,6 +12,8 @@ $red: #eb6e73
   background-size: 1000% 1000%
   animation: background-image 50s ease infinite
   +position(relative)
+  +media-breakpoint-down(sm)
+    animation: background-image 20s ease infinite
   &::before
     content: ""
     display: block

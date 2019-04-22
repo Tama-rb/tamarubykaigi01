@@ -11,8 +11,9 @@
   +position(fixed, left 50%, top 4rem, 11)
   transform: translate(-50%, 0)
   max-width: calc(100vw - 2rem)
-  +margin(horizontal, 1rem)
-  width: 30rem
+  width: 40rem
+  +media-breakpoint-down(sm)
+    top: 2rem
 
 .modal__overlay
   +position(fixed, left 0, top 0, right 0, bottom 0, 10)
@@ -20,3 +21,22 @@
 
 .modal__content
   background-color: $base
+  padding: 2.5rem 1.5rem
+  max-height: calc(100vh - 8rem)
+  overflow: auto
+  +media-breakpoint-down(sm)
+    padding: 1.5rem 1rem
+    max-height: calc(100vh - 4rem)
+  h2
+    +text-block(1.5em 1.4 0 .75em, 900 center)
+    +media-breakpoint-down(sm)
+      font-size: 1.25rem
+
+.modal__logo
+  +size(10rem auto)
+  display: block
+  +margin(horizontal, auto)
+  margin-bottom: 1.5rem
+  +media-breakpoint-down(sm)
+    width: 6rem
+    margin-bottom: .75rem

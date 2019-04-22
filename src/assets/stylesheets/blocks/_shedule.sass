@@ -1,0 +1,75 @@
+.schedule__items
+  margin-top: -1rem
+  +media-breakpoint-down(sm)
+    margin-top: -.75rem
+
+.schedule__item
+  display: flex
+  align-items: flex-start
+  border-bottom: solid 2px $border-shade
+  +media-breakpoint-down(sm)
+    border-bottom: solid 1px $border-shade
+
+.schedule__item-time
+  +padding(vertical, 1.5rem)
+  margin-right: 1.5rem
+  +text-block(1rem 1)
+  +media-breakpoint-down(sm)
+    +padding(vertical, 1rem)
+    font-size: .875rem
+    margin-right: 1rem
+
+.schedule__item-body
+  padding: 1.5rem
+  flex: 100
+  line-height: 1
+  +media-breakpoint-down(sm)
+    padding: 1rem 0 1rem
+    font-size: .875rem
+
+.schedule__item-body-inner
+  display: flex
+  align-items: flex-start
+  +media-breakpoint-down(sm)
+    margin-top: -4px
+
+.schedule__item-image-container
+  flex-basis: 4rem
+  margin-right: 1.5rem
+  +media-breakpoint-down(sm)
+    flex-basis: 2.5rem
+    margin-right: .75rem
+  .schedule__item.is-keynote &,
+  .schedule__item.is-special &
+    flex-basis: 8rem
+    +media-breakpoint-down(sm)
+      flex-basis: 2.5rem
+  img
+    border-radius: .1875rem
+    border: solid 1px $border-shade
+
+.schedule__item-label
+  +text-block(.625rem 1, inline-block 900)
+  padding: .25rem .625rem
+  border-radius: 1rem
+  .schedule__item.is-keynote &
+    background-color: $danger
+    margin-bottom: .375rem
+    color: $reversal-text
+  .schedule__item.is-member &
+    background-color: $primary
+    margin-bottom: .3125rem
+  .schedule__item.is-sponsor &
+    background-color: $success
+    margin-bottom: .3125rem
+
+
+.schedule__item-title
+  +text-block(1.125rem 1.4 0 .25em, 800)
+  +media-breakpoint-down(sm)
+    font-size: .875rem
+
+.schedule__item-speaker
+  +text-block(.875rem 1.4)
+  +media-breakpoint-down(sm)
+    font-size: .75rem
