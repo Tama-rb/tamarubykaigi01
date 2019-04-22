@@ -1,0 +1,27 @@
+.sponsors__item
+  padding: 1rem
+  border: dashed 2px $border
+  &:not(:first-child)
+    +media-breakpoint-down(sm)
+      margin-top: 1.25rem
+
+.sponsors__item-image
+  display: block
+  +size(auto 6rem)
+  +margin(horizontal, auto)
+  border-radius: .25rem
+  object-fit: cover
+  +margin(vertical, 1.5rem)
+
+.sponsors__item-title
+  +text-block(.875rem 1, center $muted-text)
+  font-family: 'Heebo', sans-serif
+  border: solid 1px
+  padding: .375rem
+  border-radius: 1.25rem
+  width: 10rem
+  +margin(horizontal, auto)
+
+.sponsors__item-company
+  +text-block(1rem 1.3, center 900)
+  font-family: 'Heebo', sans-serif
