@@ -1,0 +1,95 @@
+$orange: #f8bf6f
+$yellow: #fff4ba
+$yellow-green: #c6da5a
+$green: #6fb23b
+$deep-blue: #bf9eea
+$blue: #bfe4f5
+$pink: #f6c5c6
+$red: #eb6e73
+
+.main-visual
+  background-image: linear-gradient(45deg, $yellow-green, $blue, $deep-blue, $pink, $red, $orange, $yellow)
+  background-size: 1000% 1000%
+  animation: background-image 50s ease infinite
+  +position(relative)
+  +media-breakpoint-down(sm)
+    animation: background-image 20s ease infinite
+  &::before
+    content: ""
+    display: block
+    +position(absolute, left 0, top 0)
+    +size(100%)
+    background-image: linear-gradient(-45deg, transparent, transparent 45%, rgba(white, .2) 45%, rgba(white, .2) 50%, transparent 50%, transparent 95%, rgba(white, .2) 95%, rgba(white, .2))
+    background-size: 1rem 1rem
+    background-repeat: repeat
+  &::after
+    background: linear-gradient(45deg, transparent 33.333%, $base 33.333%, $base 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, $base 33.333%, $base 66.667%, transparent 66.667%)
+    background-size: 1.25rem 2.5rem
+    content: ""
+    display: block
+    +position(absolute, left 0, bottom 0)
+    +size(100% .625rem)
+
+@keyframes background-image
+  0%
+    background-position: 0% 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
+
+.main-visual__inner
+  +padding(vertical, 6rem)
+  +position(relative)
+  +media-breakpoint-down(sm)
+    +padding(vertical, 3rem 3rem)
+
+.main-visual__image-container
+  margin-bottom: 2rem
+  +media-breakpoint-down(sm)
+    margin-bottom: 1rem
+
+.main-visual__logo
+  +size(15.5rem auto)
+  display: block
+  +margin(horizontal, auto)
+  +media-breakpoint-down(sm)
+    width: 8rem
+
+.main-visual__title
+  +text-block(4rem 1.1, center)
+  font-family: 'Heebo', sans-serif
+  +media-breakpoint-down(sm)
+    font-size: 2.25rem
+
+.main-visual__time
+  +text-block(1.5rem 1.4 1.25rem, center)
+  +media-breakpoint-down(sm)
+    font-size: 1rem
+    margin-top: .75rem
+
+.main-visual__place
+  +text-block(1.5rem 1.4 .5rem, center)
+  +media-breakpoint-down(sm)
+    font-size: 1rem
+    margin-top: .25rem
+
+.main-visual__actions
+  margin-top: 2rem
+
+.main-visual__actions-items
+  display: flex
+  justify-content: center
+  +media-breakpoint-down(sm)
+    display: block
+
+.main-visual__actions-item
+  +padding(horizontal, .75rem)
+  min-width: 17rem
+  +media-breakpoint-down(sm)
+    &:not(:first-child)
+      margin-top: .875rem
+
+.main-visual__action.a-button,
+.main-visual__action.a-button:hover
+  border: solid .25rem $default-text
