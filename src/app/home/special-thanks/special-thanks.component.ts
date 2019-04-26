@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./special-thanks.component.sass']
 })
 export class SpecialThanksComponent implements OnInit {
+  public deploypath = environment.deploypath;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
