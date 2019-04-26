@@ -11,6 +11,7 @@ import { ScheduleComponent } from './home/schedule/schedule.component';
 import { TeamComponent } from './home/team/team.component';
 import { SponsorsComponent } from './home/sponsors/sponsors.component';
 import { AboutComponent } from './home/about/about.component';
+import { SpecialThanksComponent } from './home/special-thanks/special-thanks.component';
 
 
 
@@ -18,7 +19,7 @@ import { AboutComponent } from './home/about/about.component';
   declarations: [
   AppComponent, HomeComponent, NavComponent, FooterComponent,
   MainVisualComponent, KeynotesComponent, ScheduleComponent,
-    TeamComponent, SponsorsComponent, AboutComponent
+    TeamComponent, SponsorsComponent, AboutComponent, SpecialThanksComponent
   ],
   imports: [BrowserModule],
   providers: [],
