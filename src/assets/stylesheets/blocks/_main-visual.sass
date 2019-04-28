@@ -86,12 +86,14 @@ $red: #eb6e73
 .main-visual__actions-items
   display: flex
   justify-content: center
+  +margin(horizontal, -.75rem)
   +media-breakpoint-down(sm)
     display: block
 
 .main-visual__actions-item
   +padding(horizontal, .75rem)
-  min-width: 17rem
+  +media-breakpoint-up(md)
+    min-width: 19rem
   +media-breakpoint-down(sm)
     &:not(:first-child)
       margin-top: .875rem
@@ -99,3 +101,6 @@ $red: #eb6e73
 .main-visual__action.a-button,
 .main-visual__action.a-button:hover
   border: solid .25rem $default-text
+  height: 3.75rem
+  &.is-registration.is-disabled
+    font-size: 1.125rem
