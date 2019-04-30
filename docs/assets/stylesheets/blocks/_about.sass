@@ -1,8 +1,11 @@
-.about__body-show-modal.a-button,
-.about__body-show-modal.a-button:hover
-  border: solid 3px $default-text
-  +margin(horizontal, auto)
+.about__body
+  font-size: 1.125rem
+  +media-breakpoint-down(sm)
+    font-size: .875rem
+
+.about__body-title
+  +text-block(1.75em 1.5 0 .875em, center 900)
+  font-family: YakuHanJPs_Narrow, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif
   +media-breakpoint-up(md)
-    max-width: 10rem
-  i
-    margin-left: .5em
+    br
+      display: none
