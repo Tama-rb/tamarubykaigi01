@@ -12,6 +12,7 @@ import { TeamComponent } from './home/team/team.component';
 import { SponsorsComponent } from './home/sponsors/sponsors.component';
 import { AboutComponent } from './home/about/about.component';
 import { SpecialThanksComponent } from './home/special-thanks/special-thanks.component';
+import { BecomeASpeakerComponent } from './home/main-visual/become-a-speaker/become-a-speaker.component';
 
 
 
@@ -19,7 +20,7 @@ import { SpecialThanksComponent } from './home/special-thanks/special-thanks.com
   declarations: [
   AppComponent, HomeComponent, NavComponent, FooterComponent,
   MainVisualComponent, KeynotesComponent, ScheduleComponent,
-    TeamComponent, SponsorsComponent, AboutComponent, SpecialThanksComponent
+    TeamComponent, SponsorsComponent, AboutComponent, SpecialThanksComponent, BecomeASpeakerComponent
   ],
   imports: [BrowserModule],
   providers: [],
