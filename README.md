@@ -18,6 +18,8 @@
 ### 操作
 1. localでbuild
     - `ng build --prod --output-path "docs" --base-href "https://Tama-rb.github.io/tamarubykaigi01/" --deploy-url "/tamarubykaigi01/"`
+    - ↑長いので短縮した。
+      - `npm run build_prod`
 2. `/docs`配下を全てcommit
 3. git push
 
