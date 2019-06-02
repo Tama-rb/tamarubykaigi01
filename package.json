@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build_prod": "ng build --prod --output-path \"docs\" --base-href \"https://Tama-rb.github.io/tamarubykaigi01/\" --deploy-url \"/tamarubykaigi01/\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
